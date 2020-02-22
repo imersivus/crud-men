@@ -67,8 +67,9 @@
 
   </div>
 </div>
-</div><br/> 
+</div><br/><div class="container"> 
   <form action="/quotes" method="POST" class="was-validate">
+	  <p>Insert</p>
 	  <div class="form-group">
 		<label for="name">Name:</label>
 	  	<input type="text" placeholder="name" name="name"></br>
@@ -77,15 +78,18 @@
           	<button class="btn btn-primary" type="submit">Submit</button>
 	</div>
   </form>
-  
+</div>
+<div class="container">
   <div>
 	  <h3>Replace last quote </h3>
 	  <button class="btn btn-warning" id="update"> Replace </button>
   </div>
+</div><div class="container">
   <div>
   	<h3>Delete first quote</h3>
   	<button class="btn btn-danger" id="delete"disabled> Delete first quote </button>
   </div>
+</div>
   </div>
   <%- include('lib-script'); %>
 </body>
